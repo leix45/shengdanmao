@@ -31,7 +31,9 @@ const ResultViewer: React.FC<ResultViewerProps> = ({
   const handleDownload = () => {
     if (!generatedImage) return;
     const link = document.createElement('a');
-    link.href = `data:${mimeType};base64,${generatedImage}`;
+    // Gemini output is typically PNG, so we force image/png to ensure file validity
+    // regardless of the input MIME type.
+    link.href = `data:image/png;base64,${generatedImage}`;
     link.download = `festive-lens-${selectedColor.toLowerCase()}.png`;
     document.body.appendChild(link);
     link.click();

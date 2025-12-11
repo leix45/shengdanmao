@@ -27,10 +27,10 @@ export const addChristmasHatToImage = async (
     
     CRITICAL INSTRUCTIONS:
     1. The hat MUST be primarily ${color} in color.
-    2. The hat MUST match the artistic style, lighting, texture, and resolution of the original image perfectly.
-    3. If it's a cartoon, make the hat a cartoon. If it's a photo, make the hat photorealistic.
-    4. Ensure the hat fits naturally on the head, respecting perspective and gravity.
-    5. Do not alter the face or the background significantly, just add the hat.
+    2. DO NOT CHANGE THE PERSON'S FACE. Preserve the identity, facial features, and expression exactly as they are.
+    3. The hat MUST match the artistic style, lighting, texture, and resolution of the original image perfectly.
+    4. If it's a cartoon, make the hat a cartoon. If it's a photo, make the hat photorealistic.
+    5. Ensure the hat fits naturally on the head, respecting perspective and gravity.
     6. Return the image as the output.
   `;
 
